@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Exercise 2</title>
+    <style>
+      [checked]+span::after{
+	    font: italic 11px arial, sans-serif;
+	    content: " (initially checked)";
+      }
+      [type] {
+        border: 1px dashed red;
+      }
+      [type=button] {
+        color: blue;
+      }
+      [value=Keegan] {
+        color: magenta;
+      }
+      button~hr+input {
+        margin-left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <hr>
+    First name: <input type="text" value="Keegan"><br>
+    Last name: <input type="text" value="Fisher"><br>
+    <hr>
+    <button>Button tag</button>
+    <input type="button" value="Input tag button type">
+    <hr>
+    <input type="radio" name="sex" value="male" checked> <span>Male</span><br>
+    <input type="radio" name="sex" value="female"> <span>Female</span>
+    <hr>
+	<input type="checkbox" name="vehicle"> <span>I have a car</span><br>
+    <input type="checkbox" name="vehicle" checked> <span>I have a bike</span><br>
+    <hr>
+  </body>
+</html>

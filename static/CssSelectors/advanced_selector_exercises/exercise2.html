@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Exercise 2</title>
+    <style>
+      /* Add a selector that will match any element with the type attribute */ {
+        border: 1px dashed red;
+      }
+      /* Add a selector that will match any element with the type attribute equal to button */ {
+        color: blue;
+      }
+      /* Add a selector that will match any element with the value attribute equal to Keegan */ {
+        color: magenta;
+      }
+      /* Add a rule to create content AFTER a span that is a sibling directly after an input with the checked attribute */ {
+	    font: italic 11px arial, sans-serif;
+	    content: " (initially checked)";
+      }
+	  /* Add a selector that will match inputs that are siblings directly after an hr that came after a button */ {
+        margin-left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <hr>
+    First name: <input type="text" value="Keegan"><br>
+    Last name: <input type="text" value="Fisher"><br>
+    <hr>
+    <button>Button tag</button>
+    <input type="button" value="Input tag button type">
+    <hr>
+    <input type="radio" name="sex" value="male" checked> <span>Male</span><br>
+    <input type="radio" name="sex" value="female"> <span>Female</span>
+    <hr>
+	<input type="checkbox" name="vehicle"> <span>I have a car</span><br>
+    <input type="checkbox" name="vehicle" checked> <span>I have a bike</span><br>
+    <hr>
+  </body>
+</html>
