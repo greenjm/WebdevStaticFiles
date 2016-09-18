@@ -5,20 +5,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Exercise 2</title>
     <style>
-      /* Add a selector that will match any element with the type attribute */ {
+      [type] {
         border: 1px dashed red;
       }
-      /* Add a selector that will match any element with the type attribute equal to button */ {
+      [type=button] {
         color: blue;
       }
-      /* Add a selector that will match any element with the value attribute equal to Keegan */ {
+      [value=Keegan] {
         color: magenta;
       }
-      /* Add a rule to create content AFTER a span that is a sibling directly after an input with the checked attribute */ {
+      [checked]+span::after {
 	    font: italic 11px arial, sans-serif;
 	    content: " (initially checked)";
       }
-	  /* Add a selector that will match inputs that are siblings directly after an hr that came after a button */ {
+	  button~hr+input {
         margin-left: 100px;
       }
     </style>

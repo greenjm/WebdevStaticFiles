@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Exercise 1</title>
     <style>
-	  /* Add a selector to match the target div that uses only the id */ {
+	  #target {
 	    color: #222;
 	    font: 12px arial,sans-serif;
 	    font-weight: 600;
@@ -17,15 +17,15 @@
 	    box-shadow: inset 0 0 6px rgba(150,150,100, .3);
 	    border-radius: 2px;
 	  }
-	  /* Add a selector to match the target div when it being clicked, i.e. active (Hint: Pseudo class) */ {
+	  #target:active {
 	    color: #00E;
 	  }
-	  /* Add a selector to match the target div when it HAS the class closed */ {
+	  #target.closed {
 	    font-weight: 800;
 	    background: #ddd;
 	    box-shadow: inset 0 0 12px rgba(150,150,100, .3);
 	  }
-	  /* Add a selector to create content AFTER the target div (Hint: Pseudo element) */ {
+	  #target::after {
 	    position: absolute;
 	    content: '';
 	    height: 0px;
@@ -38,12 +38,10 @@
 	    line-height: 20px;
 	    top: 9px;
 	  }
-	  /* Add a selector to match the div that is the sibling directly after
-	     the target div IF the target div has the class closed present */ { 
+	  #target.closed+div { 
 	    display: none;
 	  }	  
-	  /* Add a selector to match the div that is the sibling directly after
-	     the target div that does not look for any class being present */ {
+	  #target+div {
 	    font: 14px/2em arial,sans-serif;
 	    margin-left: 2px;
 	    position: absolute;
@@ -51,18 +49,18 @@
 	    box-shadow: 0 0 0 1px #bbb;
 	  }
 	  
-	  /* Add a selector to match all unordered lists */ {
+	  ul {
 	    list-style: none;
 	    margin: 0;
 	    padding: 0;
 	  }
-	  /* Add a selector to match all list items */ {
+	  li {
 	    padding: 0 15px;
 	  }
-	  /* Add a selector to match all list items when they are being hovered over */ {
+	  li:hover {
 	    background: #eee;
 	  }
-	  /* Add a selector to match all list items when they are being clicked (active) */ {
+	  li:active {
 	    background: yellow;
 	  }
 	</style>
