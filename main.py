@@ -34,7 +34,7 @@ class MainHandler(webapp2.RequestHandler):
         project = []
         project.append(("Product Idea Sheets", False, "https://docs.google.com/document/d/1nag1bBRIMgFL_ikKwIEwAoAyTe7dUvboDFlm4MRwf_0/edit?usp=sharing"))
         project.append(("Mocks", False, "http://add_mock_url"))
-        project.append(("Project Planning doc", False, "http://add_google_doc_url"))
+        project.append(("Project Planning doc", False, "https://docs.google.com/document/d/14Az-gI8YmEeBNvgu8-fQveQbzlhHWb8Nw_SP7-F5Sww/edit?usp=sharing"))
         project.append(("Source code", False, "http://add_github_or_ada_url"))
         project.append(("Sprint Planning doc", False, "http://add_google_doc_url"))
         project.append(("Technical documentation", False, "http://add_github_or_ada_url"))
