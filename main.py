@@ -17,7 +17,7 @@ class MainHandler(webapp2.RequestHandler):
         appengine_track = []
         appengine_track.append(("MovieQuotes", False, "http://" + USERNAME + "-movie-quotes.appspot.com"))
         appengine_track.append(("Weatherpics", False, "http://" + USERNAME + "-weatherpics.appspot.com"))
-        appengine_track.append(("Exam 1 - (Exam title)", False, "http://" + USERNAME + "-(exam-title).appspot.com"))
+        appengine_track.append(("Exam 1 - Kid Tracker", False, "http://" + USERNAME + "-kid-tracker.appspot.com"))
         appengine_track.append(("Guestbook", False, "http://" + USERNAME + "-guestbook.appspot.com"))
         appengine_track.append(("GradeRecorder", False, "http://" + USERNAME + "-grade-recorder.appspot.com"))
         appengine_track.append(("Dice with Friends", False, "http://" + USERNAME + "-dice-with-friends.appspot.com"))
