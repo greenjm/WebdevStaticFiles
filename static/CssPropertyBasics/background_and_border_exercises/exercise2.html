@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Exercise 2</title>
+    <style>
+      body {
+        background: #000 url('background.jpg') repeat;
+      }
+      div {
+        height: 200px;
+      }
+      .image {
+	    /* Set the background color and image.  Single image no repeat. Light color background. */
+	    background: #ddd url('RoseLogo.png') no-repeat;
+      }
+      .image-repeat {
+	    /* Set the background color and image.  Repeated image. Medium color background. */
+	    background: #999 url('RoseLogo.png') repeat;
+      }
+      .image-shift {
+	    /* Set the background color and image.  Repeated image only in x direction (look it up). Apply a 50px -8px offset. Darker color background. */
+	    background: #555 url('RoseLogo.png') repeat-x 50px -8px;
+      }
+    </style>
+  </head>
+  <body>
+    <hr>
+    <div class="row image"></div>
+    <hr>
+    <div class="row image-repeat"></div>
+    <hr>
+    <div class="row image-shift"></div>
+    <hr>
+  </body>
+</html>

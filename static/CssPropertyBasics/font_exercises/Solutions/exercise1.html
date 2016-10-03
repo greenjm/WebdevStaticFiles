@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Exercise 1</title>
+    <style>
+      body {
+        font: 22px Helvetica, serif;
+      }
+      h1 {
+        font-family: "Lucida Handwriting", script;
+        text-align: center;
+        color: blue;
+        /*text-shadow: 2px 2px 5px gray;*/
+      }
+      h2 {
+	    /* Note, this time I choose to use the font shorthand property
+		   so that I could set many properties at the same time.  One
+           downside was that I had to restate Helvetica (not ideal, oh well). */
+        font: italic normal 0.75em Helvetica, serif; 
+        text-align: center;
+        color: gray;
+        /*text-shadow: 1px 1px 2px gray;*/
+      }
+      p::first-letter {
+        color: red;
+        font: bold 1.5em "Lucida Handwriting", script;
+      }
+      p::first-line {
+	    /* Note, this time I choose to do the individual properties so
+		   so that I could avoid restating the font-family of Helvetica. */
+        font-weight: bold;
+        font-variant: small-caps;
+        font-size: 1.2em;
+      }
+      p:nth-child(2) {
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+  <h1>Lorem ipsum text</h1>
+  <h2>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet..."</h2>
+<hr>
+<div id="lipsum">
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper egestas est, in hendrerit magna ultricies ac. Aliquam aliquet, velit in volutpat adipiscing, nibh lorem sagittis dui, in consequat sapien augue eget magna. Sed feugiat nulla at quam tempus adipiscing. Sed a tellus eget erat ultrices volutpat. Nunc ac mi magna. Suspendisse fringilla lacinia mollis. Nunc metus eros, commodo eget consectetur ac, fringilla non libero. Integer euismod tempus luctus. Duis convallis viverra nisi sit amet ultrices.
+</p>
+<p>
+Nunc mi ipsum, ornare id mollis a, sodales at nibh. Suspendisse accumsan posuere arcu, vitae interdum orci condimentum a. Sed auctor nulla a risus mollis congue. Mauris vitae risus nisl. Fusce ac mi eu arcu fermentum ultricies vitae vel lacus. Suspendisse potenti. Praesent posuere pretium libero, ut congue erat malesuada nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur turpis diam, pharetra non bibendum vitae, hendrerit vitae metus. Donec feugiat congue neque in egestas. Vestibulum molestie, risus eget feugiat porttitor, urna neque lobortis tortor, non pharetra elit augue sed nulla.
+</p>
+<p>
+In at egestas purus. Nunc mattis, arcu eget condimentum commodo, erat sem aliquet odio, vitae tincidunt dui nisi at magna. Fusce massa erat, rutrum vitae tincidunt at, cursus vitae erat. Proin urna velit, mattis id rutrum non, pulvinar vel dolor. Nullam egestas dictum mauris at condimentum. Sed gravida consectetur dui at rhoncus. Vivamus a ipsum quis tellus faucibus vulputate. Donec ut ligula sem.
+</p>
+</div>
+  </body>
+</html>
